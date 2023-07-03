@@ -1,0 +1,29 @@
+{
+  "name": "newgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 3004",
+    "format": "prettier --write ./js/",
+    "lint:js": "eslint ./js/**/*.js",
+    "lint:css": "stylelint ./**/*.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "or": "^0.2.0",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^9.0.5"
+  }
+}

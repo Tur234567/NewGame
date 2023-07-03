@@ -9,7 +9,7 @@
     src: url(fonts/DesktopFonts/stratosskyeng-semilight.otf);
 }
 
-body {
+.body {
     background-color: #004980;
     width: 100%;
     height: 774px;
@@ -72,4 +72,52 @@ body {
     font-size: 24px;
 }
 
+.game-body {
+    background-color: #004980;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 874px;
+}
+
+.general-game-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 72%;
+    margin-bottom: 24px;
+}
+
+.general-game-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.general-game-h1 {
+    font-size: 68px;
+}
+
+.general-game-card {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
+}
+
+.general-game-header_button {
+    width: 246px;
+    height: 50.003173828125px;
+    border-radius: 12px;
+    background-color: #7AC100;
+    color: white;
+    font-size: 24px;
+}
+
+.card {
+    padding-bottom: 16px;
+}
 
