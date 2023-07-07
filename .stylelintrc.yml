@@ -1,5 +1,7 @@
-extends:
-  [
-    "stylelint-prettier/recommended",
-    "stylelint-config-standard",
-  ]
+{
+    "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+    "rules": {
+        "selector-class-pattern": null,
+        "block-no-empty": null
+    }
+}

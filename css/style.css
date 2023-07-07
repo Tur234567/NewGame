@@ -1,122 +1,121 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: StratosSkyeng;
+@font-face {
+  font-family: SkyEng;
+  src: url('fonts/DesktopFonts/stratosskyeng-semilight.otf');
 }
 
-@font-face {
-    font-family: StratosSkyeng;
-    src: url(fonts/DesktopFonts/stratosskyeng-semilight.otf);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SkyEng, serif !important;
 }
 
 .body {
-    background-color: #004980;
-    width: 100%;
-    height: 774px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #004980;
+  width: 100%;
+  height: 774px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .general {
-    width: 480px;
-    height: 459px;
-    background-color: #c2f5ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 12px;
+  width: 480px;
+  height: 459px;
+  background-color: #c2f5ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 12px;
 }
 
 .general_level {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .general_level_h1 {
-    width: 208px;
-    height: 96px;
-    text-align: center;
-    color: #004980;
+  width: 208px;
+  height: 96px;
+  text-align: center;
+  color: #004980;
 }
 
 .general_level-choice {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .general_level-click {
-    width: 98px;
-    height: 98px;
-    border-radius: 12px;
-    background-color: white;
-    color: #0080c1;
-    font-size: 64px;
-    border: none;
-    text-align: center;
+  width: 98px;
+  height: 98px;
+  border-radius: 12px;
+  background-color: white;
+  color: #0080c1;
+  font-size: 64px;
+  border: none;
+  text-align: center;
 }
 
 .general_button-for {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .general_button {
-    background-color: #7ac100;
-    color: white;
-    border-radius: 12px;
-    border: none;
-    width: 246px;
-    height: 50px;
-    text-align: center;
-    font-size: 24px;
+  background-color: #7ac100;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  width: 246px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .game-body {
-    background-color: #004980;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 874px;
+  background-color: #004980;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 874px;
 }
 
 .general-game-header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    gap: 72%;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 72%;
+  margin-bottom: 24px;
 }
 
 .general-game-p {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .general-game-h1 {
-    font-size: 68px;
+  font-size: 68px;
 }
 
 .general-game-card {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
 }
 
 .general-game-header_button {
-    width: 246px;
-    height: 50.003173828125px;
-    border-radius: 12px;
-    background-color: #7ac100;
-    color: white;
-    font-size: 24px;
+  width: 246px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #7ac100;
+  color: white;
+  font-size: 24px;
 }
 
 .card {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
