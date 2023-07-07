@@ -1,8 +1,8 @@
 export function contentGame() {
-    let complexityLevel = localStorage.getItem('complexity');
-    console.log(complexityLevel);
-    const appEl = document.querySelector('.game-body');
-    appEl.innerHTML = `
+  let complexityLevel = localStorage.getItem('complexity');
+  console.log(complexityLevel);
+  const appEl = document.querySelector('.game-body');
+  appEl.innerHTML = `
     <div class="general-game">
     <div class="general-game-header">
         <div class="general-game_time">
