@@ -1,9 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
     entry: './JS/index.js',
+    mode: isProduction ? 'production' : 'development',
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
@@ -24,16 +26,17 @@ module.exports = {
     },
     plugins: [
         new CopyPlugin({
-            patterns: [{ from: "static", to: "static" }],
+            patterns: [{ from: "static", to: "static", noErrorOnMissing: true }],
         }),
+        new HtmlWebpackPlugin({
+            template: "./game-card.html",
+    }),
         new HtmlWebpackPlugin({
             template: "./index.html",
     }),
         new HtmlWebpackPlugin({
             template: "./game.html",
     }),
-        new HtmlWebpackPlugin({
-            template: "./game-card.html",
-    }),
 ],
-}
+    devtool: isProduction ? "hidden-source-map" : "source-map"
+};

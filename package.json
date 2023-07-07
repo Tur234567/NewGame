@@ -8,7 +8,8 @@
     "format": "prettier --write ./JS/",
     "lint:js": "eslint ./JS/**/*.js",
     "lint:css": "stylelint ./css/**/*.css --fix",
-    "start": "http-server -p 3004"
+    "start": "webpack-dev-server --open",
+    "build": "SET NODE_ENV='production' && webpack"
   },
   "author": "Artur Korolev",
   "license": "ISC",
@@ -24,7 +25,8 @@
     "stylelint-config-standard": "^33.0.0",
     "stylelint-prettier": "^3.0.0",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "http-server": "^14.1.1"
