@@ -1,3 +1,4 @@
+// файл в котором основа на данный момент
 import { appEl1 } from "./appEl.js"; // отсюда берутся все карты
 import { lvl1 } from "./lvl1.js";
 import { lvl2 } from "./lvl2.js";
