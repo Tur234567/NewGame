@@ -81,6 +81,19 @@
   height: 874px;
 }
 
+.game-body-card {
+  background-color: #004980;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 874px;
+}
+
+.CARDS {
+  display: none;
+}
+
 .general-game-header {
   display: flex;
   flex-direction: row;
@@ -118,4 +131,8 @@
 
 .card {
   padding-bottom: 16px;
+}
+
+.visible {
+  visibility: hidden;
 }
