@@ -56,3 +56,27 @@ export function lvl1() {
 </div>
     `
 }
+
+export function randomLogicsLvl1() {
+        let num1 = Math.round(Math.random() * 36);
+        let num2 = Math.round(Math.random() * 36);
+        let num3 = Math.round(Math.random() * 36);
+        let num4 = Math.round(Math.random() * 36);
+        let num5 = Math.round(Math.random() * 36);
+        let num6 = Math.round(Math.random() * 36);
+        const card = document.querySelectorAll('.card-img');
+        const imgC = document.querySelectorAll('.img-c');
+        imgC[0].src = card[num1].src;
+        imgC[1].src = card[num2].src;
+        imgC[2].src = card[num3].src;
+        imgC[3].src = card[num4].src;
+        imgC[4].src = card[num5].src;
+        imgC[5].src = card[num6].src;
+        localStorage.clear();
+        localStorage.setItem('card1', card[num1].src);
+        localStorage.setItem('card2', card[num2].src);
+        localStorage.setItem('card3', card[num3].src);
+        localStorage.setItem('card4', card[num4].src);
+        localStorage.setItem('card5', card[num5].src);
+        localStorage.setItem('card6', card[num6].src);
+}
