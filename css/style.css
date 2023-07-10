@@ -94,6 +94,10 @@
   display: none;
 }
 
+.add-body {
+  background-color: #004980;
+}
+
 .general-game-header {
   display: flex;
   flex-direction: row;

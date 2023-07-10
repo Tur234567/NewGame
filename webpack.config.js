@@ -28,18 +28,10 @@ module.exports = {
     },
     plugins: [
         new CopyPlugin({
-            patterns: [{ from: "static", to: "static", noErrorOnMissing: true }],
+            patterns: [{ from: "static", to: "static", noErrorOnMissing: false}],
         }),
         new HtmlWebpackPlugin({
-            filename: "game-card.html",
-            template: "./game-card.html",
-    }),
-        new HtmlWebpackPlugin({
             template: "./index.html",
-    }),
-        new HtmlWebpackPlugin({
-            filename: "game.html",
-            template: "./game.html",
     }),
     new MiniCssExtractPlugin(),
 ],

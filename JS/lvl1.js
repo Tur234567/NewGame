@@ -72,11 +72,29 @@ export function randomLogicsLvl1() {
         imgC[3].src = card[num4].src;
         imgC[4].src = card[num5].src;
         imgC[5].src = card[num6].src;
-        localStorage.clear();
+        localStorage.removeItem('card1');
+        localStorage.removeItem('card2');
+        localStorage.removeItem('card3');
+        localStorage.removeItem('card4');
+        localStorage.removeItem('card5');
+        localStorage.removeItem('card6');
+        localStorage.removeItem('card7');
+        localStorage.removeItem('card8');
+        localStorage.removeItem('card9');
+        localStorage.removeItem('card10');
+        localStorage.removeItem('card11');
+        localStorage.removeItem('card12');
+        localStorage.removeItem('card13');
+        localStorage.removeItem('card14');
+        localStorage.removeItem('card15');
+        localStorage.removeItem('card16');
+        localStorage.removeItem('card17');
+        localStorage.removeItem('card18');
         localStorage.setItem('card1', card[num1].src);
         localStorage.setItem('card2', card[num2].src);
         localStorage.setItem('card3', card[num3].src);
         localStorage.setItem('card4', card[num4].src);
         localStorage.setItem('card5', card[num5].src);
         localStorage.setItem('card6', card[num6].src);
+        
 }
