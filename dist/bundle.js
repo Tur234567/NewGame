@@ -678,6 +678,18 @@ function randomLogicsLvl3() {
     localStorage.setItem('card18', card[num18].src);
 }
 
+/***/ }),
+
+/***/ "./css/style.css":
+/*!***********************!*\
+  !*** ./css/style.css ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -744,6 +756,8 @@ var __webpack_exports__ = {};
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _difficultySelection_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./difficultySelection.js */ "./JS/difficultySelection.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
+
 
 (0,_difficultySelection_js__WEBPACK_IMPORTED_MODULE_0__.levelDifficulty)();
 (0,_difficultySelection_js__WEBPACK_IMPORTED_MODULE_0__.buttonStart)();
