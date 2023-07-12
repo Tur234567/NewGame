@@ -1,3 +1,5 @@
+import { contentGame } from "./contentGame.js";
+
 export function levelDifficulty() {
   for (const buttonComplexity of document.querySelectorAll(
     '.general_level-click',
@@ -8,6 +10,13 @@ export function levelDifficulty() {
     });
   }
 }
+
+function additionalOptions() {
+  document.querySelector('.body').className = 'add-body';;
+  document.querySelector('.general').style.display = 'none';
+  contentGame();
+}
+
 export function buttonStart() {
   document
     .querySelector('.general_button')
@@ -20,7 +29,7 @@ export function buttonStart() {
       } else {
         document.querySelector('.general_level_h1').textContent =
           'Выбери сложность';
-        window.location.href = 'game.html';
+          additionalOptions();
       }
     });
 }
